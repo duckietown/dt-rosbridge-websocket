@@ -19,7 +19,7 @@ dt-set-module-healthy
 dt-exec roslaunch \
   --wait \
   rosbridge_websocket rosbridge_websocket.launch \
-    port:=${WEBSOCKET_BRIDGE_PORT} \
+    port:=${WEBSOCKET_BRIDGE_PORT:-9002} \
     veh:="$VEHICLE_NAME"
 
 

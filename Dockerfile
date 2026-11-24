@@ -6,7 +6,8 @@ ARG PROJECT_MAINTAINER
 ARG PROJECT_ICON="cube"
 ARG PROJECT_FORMAT_VERSION
 # - this project
-ARG PORT=9001
+# Ente dashboard guest filter owns :9001; rosbridge listens on :9002.
+ARG PORT=9002
 
 # ==================================================>
 # ==> Do not change the code below this line
